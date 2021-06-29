@@ -49,7 +49,7 @@ h3{
        display: grid;
        grid-gap: 50px;
        grid-template-columns: 1fr 1fr;
-       grid-template-rows: 0.1fr 1fr 1.73fr;
+       grid-template-rows: 0.1fr 1fr 1fr;
        grid-template-areas: "titel titel"
                             "fotoslider fotoslider"
                             "doelgroep skills";
@@ -62,16 +62,13 @@ h3{
    .doelgroep{
         grid-area: doelgroep;
         background-color: rgba(255, 255, 255, 0.281);
-
-        margin-left: 10px;
-        margin-right: 10px;
+        margin: 15px;
         
    }
    .skills{
         grid-area: skills;
         background-color: rgba(255, 255, 255, 0.281);
-        margin-left: 10px;
-        margin-right: 10px;
+        margin: 15px;
 
    }
 
