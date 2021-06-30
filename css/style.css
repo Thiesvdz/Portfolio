@@ -5,22 +5,46 @@
     
 }
 body{
-    background: linear-gradient(#000000, #9198e5) fixed;
+	background: linear-gradient(-45deg, #afb5ee, #9198e5,#616694, #000000);
+    background-size: 400% 400%;
+	animation: gradient 14s ease infinite;
     text-align: center;
+    margin-bottom: 40px;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 hr{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     margin-left: 30px;
     margin-right: 30px;
 }
 
+
+li{
+    list-style: none;
+}
 
 /* TITEL */
 
 h1{
     color: white;
     font-size: xx-large;
+}
+
+h2{
+    color: white;
 }
 
 h3{
@@ -52,12 +76,14 @@ h3{
        grid-template-rows: 0.1fr 1fr 1fr;
        grid-template-areas: "titel titel"
                             "fotoslider fotoslider"
-                            "doelgroep skills";
-        
-
+                            "doelgroep skills   "
+                            "team      feedback "
+                            "github    live     ";
    }
+
    .titel{
        grid-area: titel;
+       margin-top: 40px;
    }
    .doelgroep{
         grid-area: doelgroep;
@@ -71,6 +97,30 @@ h3{
         margin: 15px;
 
    }
+   .team{
+    grid-area: team;
+    background-color: rgba(255, 255, 255, 0.281);
+    margin: 15px;
+
+}
+    .feedback{
+        grid-area: feedback;
+        background-color: rgba(255, 255, 255, 0.281);
+        margin: 15px;
+
+}
+.github{
+    grid-area: github;
+    background-color: rgba(255, 255, 255, 0.281);
+    margin: 15px;
+
+}
+.live{
+    grid-area: live;
+    background-color: rgba(255, 255, 255, 0.281);
+    margin: 15px;
+
+}
 
  /* Foto slider */
    .slide2{
@@ -91,7 +141,11 @@ h3{
         grid-template-areas: "titel"
                              "fotoslider"
                              "doelgroep "
-                             "skills    ";
+                             "skills    "
+                             "team      "
+                             "feedback  "
+                             "github    "
+                             "live      ";
     }
 }
 
@@ -104,6 +158,18 @@ h3{
         grid-template-areas: "titel"
                              "fotoslider"
                              "doelgroep "
-                             "skills    ";
+                             "skills    "
+                             "team      "
+                             "feedback  "
+                             "github    "
+                             "live      ";
     }
+}
+
+
+/* HREF */
+
+a{
+    text-decoration: none;
+    color: aqua;
 }
